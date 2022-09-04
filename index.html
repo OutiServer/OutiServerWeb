@@ -1,98 +1,28 @@
 <!DOCTYPE html>
+<!--
+keikun1215 dev
+-->
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>おうち鯖</title>
+    <title>ホーム - おうち鯖</title>
     <meta name="description" content="おうち鯖の公式Webサイトです" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link rel="icon" type="image/png" href="https://cdn.keikun1215.cf/assets/ouchi/icon.webp" />
+    <script src="https://kit.fontawesome.com/737a6ea2fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header id="header-pc">
-      <nav class="header-inner">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="img/logo.png" alt="" style="width: 200px"
-          /></a>
-        </div>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <a href="index.html">
-              <li class="header-nav-item select">ホーム</li>
-            </a>
-            <a href="">
-              <li class="header-nav-item"><s>管理者一覧</s></li>
-            </a>
-            <a href="">
-              <li class="header-nav-item"><s>お知らせ</s></li>
-            </a>
-            <a href="">
-              <li class="header-nav-item"><s>お問い合わせ</s></li>
-            </a>
-            <a href="">
-              <li class="header-nav-item"><s>Discord</s></li>
-            </a>
-          </ul>
-        </nav>
-      </nav>
-    </header>
-
-    <header id="header-mobile">
-      <!-- ヘッダーロゴ -->
-      <div class="logo">
-        <a href="index.html"
-          ><img src="img/logo.png" alt="" style="width: 200px"
-        /></a>
+    <header><span class="logo"><img style="height: 50px; width: 50px;" src="https://cdn.keikun1215.cf/assets/ouchi/icon.webp"/><div>Outi server</div></span><span id="m-opb"><i class="fa-solid fa-angle-down fa-fw"></i></span></header>
+    <div id="m-menu">
+    </div>
+    <div style="width: 100%; display: table; color: #fff; background-image: url('https://cdn.keikun1215.cf/assets/ouchi/ss-1.webp'); background-size: cover;" id="main">
+      <div class="welcome">
+        おうち鯖
       </div>
-
-      <!-- ハンバーガーメニュー部分 -->
-      <div class="nav">
-        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox" />
-
-        <!-- ハンバーガーアイコン -->
-        <label for="drawer_input" class="drawer_open"><span></span></label>
-
-        <!-- メニュー -->
-        <nav class="nav_content">
-          <ul class="nav_list">
-            <li class="nav_item">
-              <a href="">ホーム</a>
-            </li>
-            <li class="nav_item">
-              <a href="">管理者一覧</a>
-            </li>
-            <li class="nav_item">
-              <a href="">お知らせ</a>
-            </li>
-            <li class="nav_item">
-              <a href="">お問い合わせ</a>
-            </li>
-            <li class="nav_item">
-              <a href="">Discord</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="home">
-      <img id="background-img" src="img/backimage1.png" alt="" />
-      <img id="background-img-mobile1" src="img/backimage2.png" alt="" />
-      <img id="background-img-mobile2" src="img/backimage3.png" alt="" />
-      <nav id="welcome-msg" class="center">
-        <h3 id="welcome">Welcome to</h3>
-        <h1 id="outiserver">おうち鯖</h1>
-        <h3 id="coming">coming soon...</h3>
-      </nav>
-    </main>
-    <footer>
-      <p>2021〜2022 おうち鯖 All Rights Reserved.</p>
-    </footer>
+    </div>
   </body>
 </html>
